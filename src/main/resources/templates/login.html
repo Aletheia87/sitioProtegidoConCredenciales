@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<title>Insert title here</title>
+</head>
+<body>
+	<section class="container mt-5">
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 ">
+				<form th:action="@{/login}" th:method="post" class="form-signin">
+					<h3 class="form-signin-heading" th:text="Credenciales"></h3>
+					<input type="text" class="form-control mt-3" id="username"
+						name="username" th:placeholder="Username"> <input
+						type="password" class="form-control mt-3" id="password"
+						name="password" th:placeholder="Password">
+					<button class="btn btn-lg btn-primary btn-block mt-3" name="Submit"
+						value="Login" type="Submit" th:text="Login"></button>
+				</form>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</section>
+</body>
+</html>
