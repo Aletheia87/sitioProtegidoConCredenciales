@@ -18,8 +18,7 @@ import cl.desafiolatam.sitioProtegidoCredenciales.model.Users;
 
 @Service
 public class AuthService implements UserDetailsService{
-
-	@Autowired
+ 
 	private UsersMapper usersMapper;
 	@Autowired
 	private BCryptPasswordEncoder encoder;

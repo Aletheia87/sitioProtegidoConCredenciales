@@ -9,4 +9,5 @@ public interface UsersMapper {
 	
 	@Select("select * from users where email = #{email}")
 	Users findByEmail(@Param("email") String email);
+	
 }
